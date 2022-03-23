@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{bm}
+% Interligne
+\usepackage{setspace}
+\doublespacing
+
+\title{formulas}
+\author{morgandiepart Morgan}
+\date{January 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{General formulas}
+\paragraph{}
+Skin effect: $\delta = \sqrt{\frac{2\rho}{\omega \mu}}$\\
+$\delta_{Cu,50Hz} = 9.4mm$
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{r|c|c}
+        & Iron & Ferrite \\
+        \hline
+        $\mu_r$ & 2000 & 10-500\\
+        \hline
+        $B_{sat}$ & 2 T & 0.2 T
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}{}
+\noindent
+$\mu_r = \frac{\mu}{\mu_0}$\\
+$\mu_0 = 4 \pi * 10^{-7}$\\
+$\frac{1}{\mu_0 c^2} = \epsilon_0 = 8.854*10^{-12}$\\
+$\epsilon_{h_2o} = 80$\\
+$q_{e^{-}}=-1.602*10^{-19}$\\
+Inductor : $v(t)=L\frac{di(t)}{dt}$\\
+Capacitor : $i(t)=C\frac{dv(t)}{dt}$\\
+transformer : $n=\frac{n_2}{n_1}=\frac{V_2}{V_1}=\frac{I_1}{I_2}$
+
+\subsection{magnetism}
+$\mathcal{F} = \mathcal{R} \Phi$\\
+$\bm{B} = \frac{\Phi}{A} = \mu \bm{H}$\\
+Reluctance: $\mathcal{R} = \frac{l}{S \mu}$\\
+Flux: $\bm{\Phi} = \bm{B} A$\\
+MMF: $\mathcal{F} = n \frac{d\Phi}{dt}$
+
+\paragraph{Maxwell}
+\[
+\begin{array}{rcl}
+    \nabla \cdot \bm{E} &= &\frac{\rho}{\epsilon_0}\\
+    \nabla \cdot \bm{B} &= &0\\
+    \nabla \times \bm{E} &= &-\frac{\partial \bm{B}}{\partial t}\\
+    \nabla \times \bm{B} &= &\mu_0(\bm{J} + \epsilon_0 \frac{\partial \bm{E}}{\partial t})
+\end{array}{}
+\]
+\subsection{Random formulas}
+\paragraph{}
+Inverting amplifier:\\
+$G = -\frac{R_2}{R_1}$\\
+Non-inverting amplifier:\\
+$G = (1+\frac{R_2}{R_1})$
+\paragraph{Impedances}
+$Z_C = \frac{1}{j \omega C}$\\
+$Z_L = j \omega L$\\
+Power: \\
+$S [VA] = \sqrt{P^2[W] + S^2[var]}$
+
+\end{document}
